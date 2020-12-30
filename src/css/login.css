@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap");
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #89cbe8;
+}
+
+.login .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: clamp(300px, 50%, 500px);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid #424242;
+  border-radius: 10px;
+  padding: 40px;
+  background-color: #ffe48f;
+}
+
+.login .box .header {
+  color: #424242;
+}
+
+.login .box .header .title {
+  font-family: Work Sans;
+  font-size: xx-large;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 8px;
+}
+
+.login .box .header .text {
+  font-family: Work Sans;
+  font-size: large;
+  margin-bottom: 20px;
+}
+
+.login .box .fields {
+  margin-bottom: 20px;
+  font-family: Work sans;
+  font-size: large;
+  border: 2px solid #424242;
+  border-radius: 10px;
+  outline: 0;
+  padding: 10px;
+  -webkit-transition: border;
+  transition: border;
+}
+
+.login .box .fields:focus {
+  border: 3px solid #424242;
+}
+/*# sourceMappingURL=login.css.map */

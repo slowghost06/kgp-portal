@@ -1,0 +1,50 @@
+@import 'variables';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400&display=swap');
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: $pageColor;
+    .box{
+        display: flex;
+        width: $boxWidth;
+        flex-direction: column;
+        border: $border;
+        border-radius: $borderRadius;
+        padding: $padding;
+        background-color:$boxColor;
+        .header{
+            color: #424242;
+            .title{
+                font-family: Work Sans;
+                font-size: xx-large;
+                justify-content: center;
+                align-items: center;
+                margin: 8px;
+            }
+            .text{
+                font-family: Work Sans;
+                font-size: large;
+                margin-bottom: 20px;
+            }
+        }
+        .fields{
+            margin-bottom: $marginBottom;
+            font-family: Work sans;
+            font-size: large;
+            border: $border;
+            border-radius: $borderRadius;
+            outline: 0;
+            padding: 10px;
+            transition: border;
+            &:focus{
+                border: $borderFocus;
+            }
+        }
+    }
+}
