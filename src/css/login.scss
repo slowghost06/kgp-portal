@@ -41,8 +41,22 @@
             border-radius: $borderRadius;
             outline: 0;
             padding: 10px;
-            transition: border;
+            transition: border 0.1s ease-out;
             &:focus{
+                border: $borderFocus;
+            }
+        }
+        .primaryButton{
+            outline: 0;
+            border: $border;
+            border-radius: $borderRadius;
+            font-family: Work sans;
+            font-size: large;
+            padding: 10px;
+            align-self: center;
+            transition: border 0.1s ease-out;
+            background-color: $primaryButtonColor;
+            &:hover{
                 border: $borderFocus;
             }
         }

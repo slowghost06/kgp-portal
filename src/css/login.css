@@ -18,7 +18,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: clamp(300px, 50%, 500px);
+  width: clamp(300px, 33%, 500px);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -59,11 +59,30 @@
   border-radius: 10px;
   outline: 0;
   padding: 10px;
-  -webkit-transition: border;
-  transition: border;
+  -webkit-transition: border 0.1s ease-out;
+  transition: border 0.1s ease-out;
 }
 
 .login .box .fields:focus {
+  border: 3px solid #424242;
+}
+
+.login .box .primaryButton {
+  outline: 0;
+  border: 2px solid #424242;
+  border-radius: 10px;
+  font-family: Work sans;
+  font-size: large;
+  padding: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: border 0.1s ease-out;
+  transition: border 0.1s ease-out;
+  background-color: #90EE90;
+}
+
+.login .box .primaryButton:hover {
   border: 3px solid #424242;
 }
 /*# sourceMappingURL=login.css.map */
